@@ -1,0 +1,12 @@
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="date">Date:</label>
+      <input id="date" type="date" formControlName="date">
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input id="time" type="time" formControlName="time">
+    </div>
+    <button type="submit">Book</button>
+  </form>
+  
